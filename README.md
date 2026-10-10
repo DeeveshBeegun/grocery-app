@@ -23,7 +23,15 @@ A complete **frontend-only** grocery ordering app built with **React Native + Ex
 - **Settings** — pick any app colour with a custom colour picker + hex input, with live preview; saved on-device
 
 ### Admin
-- Dashboard with overview cards (total products, total orders, pending, delivered, low stock, active deliveries) and quick actions
+- **Advanced analytics dashboard** — a production-style business-intelligence panel with:
+  - 12 KPI cards (revenue, orders, customers, stock health, …) each with a trend arrow, % change and a sparkline
+  - A date-range filter bar (Today / 7 / 30 / 90 days / This Month / This Year / Custom) that drives every chart and card
+  - Sales analytics: revenue trend (daily/weekly/monthly/yearly), orders trend, and a dual-axis revenue-vs-orders chart
+  - Best sellers: top-products table, top-10 horizontal bar chart, and a product-sales distribution doughnut
+  - Category, inventory (stock-status doughnut + low-stock table + inventory value), customer (growth, segmentation, top spenders), delivery (status doughnut, performance metrics, live map placeholder), package, and sales-forecast sections
+  - Mock export buttons (Sales / Inventory / Orders / Customer reports)
+  - Built with `react-native-chart-kit` + `react-native-svg` (plus custom SVG widgets), working on Android, iOS and Web
+- Quick actions
 - Manage Products (add / edit / delete) with photo upload
 - Add / Edit Product form (type, category, unit, price, stock, availability toggle, image)
 - Manage Orders + Order Details with **order & delivery status updates that flow straight through to the customer's tracking screen** (shared state)
